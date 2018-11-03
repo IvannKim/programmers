@@ -16,7 +16,7 @@ const watermelonNum = 4;
 
 const makeWatermelon = n => {
     let watermelon = [];
-    for (i = 0; i < n; i++) {
+    for (let i = 0; i < n; i++) {
         watermelon.push("수","박")
     }
  return watermelon.splice(0,n).join("")
