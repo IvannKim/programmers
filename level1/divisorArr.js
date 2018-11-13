@@ -26,16 +26,15 @@ arr의 모든 원소는 1으로 나누어 떨어집니다. 원소를 오름차�
 입출력 예#3
 3, 2, 6은 10으로 나누어 떨어지지 않습니다. 나누어 떨어지는 원소가 없으므로 [-1]을 리턴합니다. */
 
-const arr = [3, 2, 6];
-const divisor = 10;
+const arr = [5, 9, 7, 10];
+const divisor = 11;
 
 function solution(arr, divisor) {
-    let newArr = [];
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] % divisor === 0) newArr.push(arr[i])
-        if (divisor === 1) return arr.sort()
-        if (arr[i] % divisor !== 0) return newArr.push(-arr.length)
-    }
-    return newArr
+    let answer = []
+    arr.forEach((element) => {
+        if (element % divisor === 0) answer.push(element);
+    })
+    if (!answer[0]) answer.push(-1)
+    return answer.sort((left, right) => left - right)
 }
 console.log(solution(arr, divisor));
