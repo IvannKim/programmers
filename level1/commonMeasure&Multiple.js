@@ -18,3 +18,17 @@ n	m	return
 입출력 예 #2
 자연수 2와 5의 최대공약수는 1, 최소공배수는 10이므로 [1, 10]을 리턴해야 합니다. */
 
+const n = 3;
+const m = 12;
+
+function solution(n, m) {
+    let arr = [];
+    if (n < m) {
+        
+    }
+    if (n > m) {
+        
+    }
+    return arr;
+}
+console.log(solution(n, m))
