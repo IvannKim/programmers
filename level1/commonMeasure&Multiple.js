@@ -22,13 +22,10 @@ const n = 3;
 const m = 12;
 
 function solution(n, m) {
-    let arr = [];
-    if (n < m) {
-        
+    let gcd = 0
+    for (let i = 0; i < Math.max(n, m); i++) {
+        if (n % i === 0 && m % i === 0) gcd = i
     }
-    if (n > m) {
-        
-    }
-    return arr;
+    return [gcd, n * m / gcd]
 }
 console.log(solution(n, m))
