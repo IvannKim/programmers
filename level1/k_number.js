@@ -23,11 +23,16 @@ array	commands	return
 [1, 5, 2, 6, 3, 7, 4]를 1번째부터 7번째까지 자릅니다. [1, 2, 3, 4, 5, 6, 7]의 세 번째 숫자는 3입니다.*/
 
 const array = [1, 5, 2, 6, 3, 7, 4]
-const commands = [2, 5, 3]
+const commands = [[2, 5, 3], [4, 4, 1], [1, 7, 3]]
 
 function solution(array, commands) {
-    array.splice(commands[0], commands[1])
-    return array
+    let result = []
+    commands.forEach(arr => {
+        const newArr = array.slice(arr[0]-1, arr[1])
+        const getNewArr = newArr.sort()
+        result.push(getNewArr[arr[2]-1])
+    })
+    return result
 }
 
-console.log(array, commands)
+console.log(solution(array, commands))
