@@ -28,24 +28,11 @@ mislav는 참여자 명단에는 두 명이 있지만, 완주자 명단에는 �
 const participant = ['mislav', 'stanko', 'mislav', 'ana']
 const completion = ['mislav', 'stanko', 'ana']
 
-// function solution(participant, completion) {
-//     for (let i = 0; i < completion.length; i++) {
-//         let index = participant.indexOf(completion[i])
-//         participant.splice(index, 1);
-//     }
-//     return `${participant}`
-// }
 function solution(participant, completion) {
     completion.forEach( (element, index) => {
         participant.splice(participant.indexOf(completion[index]),1)
     })
     return `${participant}`
 }
-// function solution(participant, completion) {
-//     participant.filter(people => {
-//         if(people === completion)
-//     })
-//     return `${participant}`
-// }
 
 console.log(solution(participant, completion))
