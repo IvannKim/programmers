@@ -34,5 +34,4 @@ function solution(participant, completion) {
     })
     return `${participant}`
 }
-
 console.log(solution(participant, completion))
