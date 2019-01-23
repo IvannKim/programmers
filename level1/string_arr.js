@@ -10,8 +10,14 @@ Zbcdefg	gfedcbZ*/
 
 const s = "Zbcdefg"
 
-function solution(s) {
-
-}
+const solution = s => s.split('').reverse().join('')
 
 console.log(solution(s))
+
+// function solution(s) {
+//     const sArray = s.split('')
+//     const lowerS = s.toLowerCase().split('')
+//     console.log(lowerS)
+//     const sortedS = lowerS.sort()
+//     console.log(sortedS)
+// }
