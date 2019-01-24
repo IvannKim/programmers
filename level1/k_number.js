@@ -29,9 +29,9 @@ const commands = [[2, 5, 3], [4, 4, 1], [1, 7, 3]]
 function solution(array, commands) {
     let result = []
     commands.forEach(arr => {
-        const newArr = array.slice(arr[0]-1, arr[1])
+        const newArr = array.slice(arr[0] - 1, arr[1])
         const getNewArr = newArr.sort()
-        result.push(getNewArr[arr[2]-1])
+        result.push(getNewArr[arr[2] - 1])
     })
     return result
 }

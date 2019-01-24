@@ -29,8 +29,8 @@ const participant = ['mislav', 'stanko', 'mislav', 'ana']
 const completion = ['mislav', 'stanko', 'ana']
 
 function solution(participant, completion) {
-    completion.forEach( (element, index) => {
-        participant.splice(participant.indexOf(completion[index]),1)
+    completion.forEach((element, index) => {
+        participant.splice(participant.indexOf(completion[index]), 1)
     })
     return `${participant}`
 }
