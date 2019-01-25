@@ -18,13 +18,22 @@ n	result
 입출력 예 #2
 1부터 5 사이의 소수는 [2,3,5] 3개가 존재하므로 3를 반환*/
 
-const n = 5;
+const n = 10;
 
 function solution(n) {
     let result = [];
-    for (let i = 0; i < n; i++) {
-        if ()
+    for (let i = 2; i <= n; i++) {
+        let isPrimeNumber = true;
+        for (let j = 2; j < i; j++) {
+            if (i % j === 0) {
+                isPrimeNumber = false;
+            }
+        }
+        if (isPrimeNumber) {
+            result.push(i)
+        }
     }
+    return result.length
 }
 
 console.log(solution(n))
