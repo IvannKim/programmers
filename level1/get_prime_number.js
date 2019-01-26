@@ -18,7 +18,7 @@ n	result
 입출력 예 #2
 1부터 5 사이의 소수는 [2,3,5] 3개가 존재하므로 3를 반환*/
 
-const n = 10;
+const n = 15;
 
 function solution(n) {
     let result = [];
@@ -33,7 +33,7 @@ function solution(n) {
             result.push(i)
         }
     }
-    return result.length
+    return result
 }
 
 console.log(solution(n))
