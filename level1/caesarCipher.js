@@ -15,11 +15,15 @@ AB	1	BC
 z	1	a
 a B z	4	e F d */
 
-const s = "AB";
+const s = 'a';
 const n = 1;
 
 function solution(s, n) {
-
-    return 
+    const alphbetArr = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 
+                            'm', 'n', 'o', 'p', 'r', 's', 't', 'u', 'w', 'x', 'y', 'z']
+    const indexOfS = alphbetArr.indexOf(s)
+    console.log(indexOfS)
+    const result = indexOfS + n
+    console.log(result)
 }
 console.log(solution(s, n));
