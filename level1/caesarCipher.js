@@ -19,11 +19,14 @@ const s = 'a';
 const n = 1;
 
 function solution(s, n) {
-    const alphbetArr = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 
-                            'm', 'n', 'o', 'p', 'r', 's', 't', 'u', 'w', 'x', 'y', 'z']
+    const alphbetArr = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'r', 's', 't', 'u', 'w', 'x', 'y', 'z']
     const indexOfS = alphbetArr.indexOf(s)
     console.log(indexOfS)
-    const result = indexOfS + n
+    let result = alphbetArr[indexOfS + n]
     console.log(result)
+    if (s === 'z') {
+       result =  alphbetArr[0]
+    }
+    return result
 }
 console.log(solution(s, n));
