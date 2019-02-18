@@ -21,8 +21,5 @@ const N = 987;
 function solution(N) {
     return String(N).split("").reduce((a, b) => Number(a) + Number(b))
 }
-// function solution(N) {
-//     const n = String(N).split("")
-//     return n.reduce((a, b) => Number(a) + Number(b))
-// }
+
 console.log(solution(N));
