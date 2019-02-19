@@ -19,7 +19,8 @@ N	answer
 const N = 987;
 
 function solution(N) {
-    return String(N).split("").reduce((a, b) => Number(a) + Number(b))
+    // return String(N).split("").reduce((a, b) => Number(a) + Number(b))
+    return (N + '').split('').reduce((a, b) => a*1 + b*1)
 }
 
 console.log(solution(N));
