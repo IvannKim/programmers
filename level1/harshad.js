@@ -13,3 +13,10 @@ function solution(number) {
 }
 
 console.log(solution(n))
+
+
+function Harshad(n){
+    return !(n % (n + "").split("").reduce((a, b) => +b + +a ));
+  }
+  
+console.log(Harshad(n))
