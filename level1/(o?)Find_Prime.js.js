@@ -18,7 +18,9 @@ n	result
 입출력 예 #2
 1부터 5 사이의 소수는 [2,3,5] 3개가 존재하므로 3를 반환*/
 
-const n = 15;
+// ==> 에라토스테네스의 체 활용하면 효율성 증가
+
+const n = 5;
 
 function solution(n) {
     let result = [];

@@ -29,20 +29,16 @@ n	result
 
 const n = 6;
 
-function solution(number) {
-    let newNumber;
+function solution(n) {
+    let res = n;
     let count = 0;
-    while (newNumber == 1) {
-        if (number % 2 == 0) {
-            newNumber.push(number / 2)
-            count++
-        } else if (number % 2 != 0) {
-            newNumber.push(number * 3 +1)
-            count++
-        }
+    while(res !== 1){
+        if(res%2 === 0) res = res/2;
+        else res = res*3+1;
+        count++;
+        if(count > 500) return -1
     }
-    console.log(count)
-    console.log(newNumber)
+    return count;
 }
 
-console.log(solution(n))
+console.log(solution(10))
