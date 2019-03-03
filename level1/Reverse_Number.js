@@ -15,11 +15,17 @@ const n = 12345;
 
 function solution(number) {
     const resultArr = [];
-    const splitedNumber = (number+'').split('');
-    console.log(splitedNumber);
-    for (let i = 0; i < splitedNumber.length; i++) {
-        
-    }
+    const splitedNumber = (number + '').split('');
+    splitedNumber.forEach(element => {
+        resultArr.unshift(parseInt(element, 10))
+    })
+    return resultArr
 }
 
 console.log(solution(n));
+
+function solution2(n){
+    return n.toString().split('').reverse().map(o => o = parseInt(o));
+}
+
+console.log(solution2(n));
