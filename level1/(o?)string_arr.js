@@ -13,7 +13,7 @@ Zbcdefg	gfedcbZ*/
 
 const s = "Zbcdefg"
 
-const solution = s => s.split('').reverse().join('')
+// const solution = s => s.split('').reverse().join('')
 
 console.log(solution(s))
 
