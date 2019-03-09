@@ -27,7 +27,13 @@ const strings = ['sun', 'bed', 'car']
 const n = 1
 
 function solution(strings, n) {
-    return strings.sort((a, b) => a[n] < b[n] ? -1 : a[n] > b[n] ? 1 : 0)
+    return strings.sort((a, b) => {
+        if (a[n] !== b[n]) {
+            return a[n] < b[n] ? -1 : a[n] > b[n] ? 1 : 0
+        } else {
+            return a < b ? -1 : a > b ? 1 : 0
+        }
+    })
 }
 
 console.log(solution(strings, n))
