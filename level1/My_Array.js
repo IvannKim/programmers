@@ -25,10 +25,9 @@ abce와 abcd는 사전순으로 정렬하면 abcd가 우선하므로, 답은 [ab
 
 const strings = ['sun', 'bed', 'car']
 const n = 1
-console.log(strings.sort())
 
 function solution(strings, n) {
-    return strings.sort((a, b) => a[n] - b[n])
+    return strings.sort((a, b) => a[n] < b[n] ? -1 : a[n] > b[n] ? 1 : 0)
 }
 
 console.log(solution(strings, n))
