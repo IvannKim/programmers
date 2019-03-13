@@ -6,18 +6,18 @@
 제한 조건
 n과 m은 각각 1000 이하인 자연수입니다.*/
 
-const n = 5, m = 3;
+const n = 3, m = 3;
 
-function solution(n) {
-    let res = [];
+function solution(n,m) {
     let result = [];
-    for (let i = 0; i < n; i++) {
-        res.push("*")
-    }
     for (let j = 0; j < m; j++) {
-        result.push(res.join("") + "\n")
+        let res = [];
+        for (let i = 0; i < n; i++) {
+            res.push("*")
+        }
+        result.push(res.join("")+'\n')
     }
     return result.join("")
 }
 
-console.log(solution(n))
+console.log(solution(n,m))

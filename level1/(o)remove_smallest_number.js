@@ -16,7 +16,7 @@ arr	        return
 [10]	    [-1]
 */
 
-const arr = [4,3,2,1,5];
+const arr = [2,4,6,5];
 
 function solution(arr) {
     let result = [];
